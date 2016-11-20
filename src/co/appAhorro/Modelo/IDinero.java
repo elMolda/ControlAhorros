@@ -8,5 +8,6 @@ package co.appAhorro.Modelo;
 public interface IDinero {
 	
 	double calcularValorDinero();
-	
+	void setDenominacion(double denominacion) throws DenominacionNoValidaException;
+	double getDenominacionDouble();
 }
