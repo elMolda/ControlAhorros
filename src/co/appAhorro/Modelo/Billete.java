@@ -35,9 +35,9 @@ public class Billete implements IDinero {
 		
 		if (denominacion.equals(DenominacionBillete.CINCUENTAMIL)) {
 			return 50000;
-		} else if(denominacion.equals(DenominacionBillete.VEINTEMIL)) {
+		} else if (denominacion.equals(DenominacionBillete.VEINTEMIL)) {
 					return 20000;
-				} else if(denominacion.equals(DenominacionBillete.DIEZMIL)) {
+				} else if (denominacion.equals(DenominacionBillete.DIEZMIL)) {
 							return 10000;
 						} else if (denominacion.equals(DenominacionBillete.CINCOMIL)) {
 									return 5000;
@@ -56,9 +56,9 @@ public class Billete implements IDinero {
 			throw new DenominacionNoValidaException("Denominacion de Billete no Valida");
 		} else if (denominacion == 50000) {
 					this.denominacion = DenominacionBillete.CINCUENTAMIL;
-				} else if(denominacion == 20000) {
+				} else if (denominacion == 20000) {
 							this.denominacion = DenominacionBillete.VEINTEMIL;
-						} else if(denominacion == 10000) {
+						} else if (denominacion == 10000) {
 									this.denominacion = DenominacionBillete.DIEZMIL;
 								} else if (denominacion == 5000) {
 											this.denominacion = DenominacionBillete.CINCOMIL;

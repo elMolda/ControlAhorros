@@ -36,9 +36,9 @@ public class Moneda implements IDinero{
 		
 		if (denominacion.equals(DenominacionMoneda.MIL)) {
 			return 1000;
-		} else if(denominacion.equals(DenominacionMoneda.QUINIENTOS)) {
+		} else if (denominacion.equals(DenominacionMoneda.QUINIENTOS)) {
 					return 500;
-				} else if(denominacion.equals(DenominacionMoneda.DOSCIENTOS)) {
+				} else if (denominacion.equals(DenominacionMoneda.DOSCIENTOS)) {
 							return 200;
 						} else if (denominacion.equals(DenominacionMoneda.CIEN)) {
 									return 100;
@@ -55,9 +55,9 @@ public class Moneda implements IDinero{
 			throw new DenominacionNoValidaException("Denominacion de Moneda no Valida");	
 		} else if (denominacion == 1000) {
 					this.denominacion = DenominacionMoneda.MIL;
-				} else if(denominacion == 500) {
+				} else if (denominacion == 500) {
 							this.denominacion = DenominacionMoneda.QUINIENTOS;
-						} else if(denominacion == 200) {
+						} else if (denominacion == 200) {
 									this.denominacion = DenominacionMoneda.DOSCIENTOS;
 								} else if (denominacion == 100) {
 											this.denominacion = DenominacionMoneda.CIEN;
