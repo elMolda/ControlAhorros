@@ -12,6 +12,10 @@ public class Billete implements IDinero {
 	private int numBilletes;
 	private DenominacionBillete denominacion;
 	
+	public Billete() {
+		
+	}
+	
 	public void setNumBilletes(int numMonedas) {
 		
 		this.numBilletes = numMonedas;

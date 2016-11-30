@@ -19,6 +19,10 @@ public class Moneda implements IDinero{
 		
 	}
 	
+	public Moneda () {
+		
+	}
+	
 	public int getNumMonedas() {
 		
 		return this.numMonedas;
