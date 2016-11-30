@@ -1,4 +1,4 @@
-package co.appAhorro.Modelo;
+package co.appAhorro.Modelo.Negocio;
 
 /**
  * @author David Molano

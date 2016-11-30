@@ -1,4 +1,4 @@
-package co.appAhorro.Modelo;
+package co.appAhorro.Modelo.Negocio;
 
 import java.time.LocalDate;
 import java.util.HashMap;
