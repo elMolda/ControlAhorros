@@ -12,8 +12,9 @@ public class Billete implements IDinero {
 	private int numBilletes;
 	private DenominacionBillete denominacion;
 	
-	public Billete() {
-		
+	public Billete(int num, double denominacion) throws DenominacionNoValidaException {
+		this.numBilletes = num;
+		this.setDenominacion(denominacion);
 	}
 	
 	public void setNumBilletes(int numMonedas) {

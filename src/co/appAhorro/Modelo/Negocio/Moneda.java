@@ -19,8 +19,9 @@ public class Moneda implements IDinero{
 		
 	}
 	
-	public Moneda () {
-		
+	public Moneda (int num,  double denominacion) throws DenominacionNoValidaException {
+		this.numMonedas = num;
+		this.setDenominacion(denominacion);
 	}
 	
 	public int getNumMonedas() {
