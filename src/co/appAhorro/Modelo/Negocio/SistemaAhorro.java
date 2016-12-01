@@ -1,5 +1,6 @@
 package co.appAhorro.Modelo.Negocio;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import co.appAhorro.Controlador.Controlador;
@@ -16,13 +17,18 @@ public class SistemaAhorro {
 	private Controlador controlador;
 	private List<Ahorro> ahorros;
 	
+	public SistemaAhorro() {
+		this.ahorros = new ArrayList<Ahorro>();
+	}
 	
 	
-	public double ingresarAhorro(int cont50k, int cant20k, int cant10k, int cant5k, int cant2k, int cant1k, int cantMon1k, int cant500, int cant200, int cant100, int cant50) throws DenominacionNoValidaException {
+	public double ingresarAhorro(int cantidades[]) throws DenominacionNoValidaException {
 		
 		Ahorro ahorroNuevo = new Ahorro();
-		this.ahorros.add(ahorroNuevo);
-		return this.ahorros.get(this.ahorros.indexOf(ahorroNuevo)).ingresarAhorro(cont50k, cant20k,cant10k,cant5k,cant2k,cant1k,cantMon1k,cant500,cant200,cant100,cant50);
+		ahorros.add(ahorroNuevo);
+		return ahorros.get(ahorros.indexOf(ahorroNuevo)).ingresarAhorro(cantidades[0], cantidades[1],cantidades[2],
+																				cantidades[3],cantidades[4],cantidades[5],
+																				cantidades[6],cantidades[7],cantidades[8],cantidades[8],cantidades[10]);
 
 	}
 	

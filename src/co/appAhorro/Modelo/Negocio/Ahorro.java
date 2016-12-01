@@ -27,33 +27,40 @@ public class Ahorro {
 		
 	}
 	
-	public double ingresarAhorro(int cont50k, int cant20k, int cant10k, int cant5k, int cant2k, int cant1k, int cantMon1k, int cant500, int cant200, int cant100, int cant50) throws DenominacionNoValidaException {
+	public String existo(){
+		return "EXISTO";
+	}
+	
+	public double ingresarAhorro(int cont50k, int cant20k, int cant10k,
+								int cant5k, int cant2k, int cant1k,
+								int cantMon1k, int cant500, int cant200,
+								int cant100, int cant50) throws DenominacionNoValidaException {
 		
 		
 		IDinero b50k = new Billete(cont50k,50000);
-		this.monedasBilletes.put(b50k.getDenominacionDouble(), b50k);
+		monedasBilletes.put(b50k.getDenominacionDouble(), b50k);
 		IDinero b20k = new Billete(cant20k,20000);
-		this.monedasBilletes.put(b20k.getDenominacionDouble(), b20k);
+		monedasBilletes.put(b20k.getDenominacionDouble(), b20k);
 		IDinero	b10k = new Billete(cant10k,10000);
-		this.monedasBilletes.put(b10k.getDenominacionDouble(), b10k);
+		monedasBilletes.put(b10k.getDenominacionDouble(), b10k);
 		IDinero b5k = new Billete(cant5k,5000);
-		this.monedasBilletes.put(b5k.getDenominacionDouble(), b5k);
+		monedasBilletes.put(b5k.getDenominacionDouble(), b5k);
 		IDinero b2k = new Billete(cant2k,2000);
-		this.monedasBilletes.put(b2k.getDenominacionDouble(), b2k);
+		monedasBilletes.put(b2k.getDenominacionDouble(), b2k);
 		IDinero b1k = new Billete(cant1k,1000);
-		this.monedasBilletes.put(b1k.getDenominacionDouble(), b1k);
+		monedasBilletes.put(b1k.getDenominacionDouble(), b1k);
 		IDinero m1k = new Moneda(cantMon1k,1000);
-		this.monedasBilletes.put(m1k.getDenominacionDouble(), m1k);
+		monedasBilletes.put(m1k.getDenominacionDouble(), m1k);
 		IDinero m500 = new Moneda(cant500,500);
-		this.monedasBilletes.put(m500.getDenominacionDouble(), m500);
+		monedasBilletes.put(m500.getDenominacionDouble(), m500);
 		IDinero m200 = new Moneda(cant200,200);
-		this.monedasBilletes.put(m200.getDenominacionDouble(), m200);
+		monedasBilletes.put(m200.getDenominacionDouble(), m200);
 		IDinero m100 = new Moneda(cant100,100);
-		this.monedasBilletes.put(m100.getDenominacionDouble(), m100);
+		monedasBilletes.put(m100.getDenominacionDouble(), m100);
 		IDinero m50 = new Moneda(cant50,50);
-		this.monedasBilletes.put(m50.getDenominacionDouble(), m50);
+		monedasBilletes.put(m50.getDenominacionDouble(), m50);
 		
-		this.totalAhorrado = this.calcularValorAhorro();
+		totalAhorrado = this.calcularValorAhorro();
 		
 		return this.totalAhorrado;
 			
